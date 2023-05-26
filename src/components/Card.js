@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
+import Image from "next/image";
+
 
 export default function CardComponent({id,title,description,image,price}) {
     return (
@@ -17,7 +19,7 @@ export default function CardComponent({id,title,description,image,price}) {
         <div
             className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-                <img className="rounded-t-lg"
+                <Image  unoptimized  width={500}  height={500} className="rounded-t-lg"
                      src={image ?image:"/images/img.png"}
                      alt=""/>
 

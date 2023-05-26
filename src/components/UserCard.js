@@ -1,5 +1,6 @@
 import React from 'react';
 import {Card, Dropdown} from "flowbite-react";
+import Image from "next/image";
 
 function UserCard({avatar,name}) {
     return (
@@ -37,7 +38,7 @@ function UserCard({avatar,name}) {
                     </Dropdown>
                 </div>
                 <div className="flex flex-col items-center pb-10">
-                    <img
+                    <Image  unoptimized  width={500}  height={500}
                         className="mb-3 h-24 w-24 rounded-full shadow-lg"
                         src={avatar?avatar:"https://flowbite.com/docs/images/people/profile-picture-3.jpg"}
                         alt="Bonnie image"

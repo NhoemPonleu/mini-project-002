@@ -3,6 +3,7 @@ import axios from "axios"
 import { ErrorMessage, Field, Form, Formik } from "formik"
 import { useRouter } from "next/navigation"
 import React, { useEffect, useState } from "react"
+import Image from "next/image";
 import * as Yup from "yup"
 
 // for upload file
@@ -72,11 +73,11 @@ function CustomInput({ field, form, isSubmitting, ...props }) {
             {preview && (
                 <div className='avatar'>
                     <div className='w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2'>
-                        <img
+                        {/* eslint-disable-next-line react/jsx-no-undef */}
+                        <Image  unoptimized  width={500}  height={500}
                             src={preview}
                             alt='dummy'
-                            width='150'
-                            height='100'
+
                         />
                     </div>
                 </div>

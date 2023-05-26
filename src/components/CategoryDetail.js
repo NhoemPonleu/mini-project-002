@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from "next/image";
 
 function CategoryDetail({id,image,name,createOn}) {
     return (
@@ -7,7 +8,7 @@ function CategoryDetail({id,image,name,createOn}) {
         //        className="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
         //     >
         //         {image && (
-        //             <img
+        //             <Image  unoptimized  width={500}  height={500}
         //                 className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
         //                 src={image[0]}
         //                 alt=""
@@ -37,7 +38,7 @@ function CategoryDetail({id,image,name,createOn}) {
                     <a href="#" className="stretched-link">Continue reading</a>
                 </div>
                 <div className="col-auto d-none d-lg-block">
-                   <img src={image}/>
+                   <Image  unoptimized  width={500}  height={500} src={image} alt={"aa"}/>
 
                 </div>
             </div>

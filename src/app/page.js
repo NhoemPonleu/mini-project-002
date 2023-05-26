@@ -1,10 +1,31 @@
-"use client";
+"use client"
 import CardComponent from "@/components/Card";
 import SlayComponent from "@/components/SlayComponent";
+
+
 export const metadata = {
-  title: 'Home Page',
-  description: 'This is home page',
+  title: 'Product',
+  description: "desc",
+  locale: 'en-US',
+  category: 'product',
+  type: 'website',
+  siteName: 'webapp',
+  manifest: '/manifest.json',
+  openGraph:{
+    title: 'List-Product',
+    description: "desc",
+    url: '/',
+    siteName: 'webapp',
+    images: [
+      {
+        url: "/img_1.png",
+        width: 800,
+        height: 600,
+      },
+    ]
+  },
 }
+
 export async function getData(){
   const res=await fetch(`https://api.escuelajs.co/api/v1/products?limit=10&offset=12`)
   const data=res.json()

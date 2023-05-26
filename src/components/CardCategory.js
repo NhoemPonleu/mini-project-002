@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from "next/image";
 
 export  default function CardCategory({id,image,name,creationAt}) {
     return (
@@ -7,13 +8,14 @@ export  default function CardCategory({id,image,name,creationAt}) {
             className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                  <a href="#">
             {/*<Link href={images}>*/}
-            {/*    <img className="rounded-t-lg"*/}
+            {/*    <Image  unoptimized  width={500}  height={500} className="rounded-t-lg"*/}
             {/*         src={images ?images:"/images/img.png"}*/}
             {/*         alt=""/>*/}
             {/*</Link>*/}
             </a>
              <a href="#">
-                <img className="rounded-t-lg"
+                 {/* eslint-disable-next-line react/jsx-no-undef */}
+                <Image  unoptimized  width={500}  height={500} className="rounded-t-lg"
                      src={image ?image:"/images/img.png"}
                      alt=""/>
 
