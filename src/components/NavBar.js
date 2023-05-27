@@ -34,7 +34,7 @@ export default function NavBar() {
                     <Link href="/category" className="text-gray-900 dark:text-white hover:underline">Category</Link>
                 </li>
                 <li>
-                    <Link href="/produ" className="text-gray-900 dark:text-white hover:underline">Add New Product </Link>
+                    <Link href="/product" className="text-gray-900 dark:text-white hover:underline">Add New Product </Link>
                 </li>
                 <li>
                     <a href="/dashboard/setting" className="text-gray-900 dark:text-white hover:underline">setting</a>
